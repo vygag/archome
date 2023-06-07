@@ -1,0 +1,19 @@
+menu.title:						        flat gradient vertical vertical								
+menu.title.justify:					    center
+menu.title.color:					    #5c3a32
+menu.title.colorTo:					    #5c3a32
+menu.title.textColor:					#000000
+menu.title.font:                        liberation mono-8
+
+menu.frame:	                            flat							
+menu.frame.justify:					    left
+menu.frame.color:					    #6f7d7b
+menu.frame.colorTo:					    #6f7d7b
+menu.frame.textColor:					#000000
+menu.frame.disableColor:				
+menu.frame.font:                        liberation mono-10
+
+menu.hilite:						    flat gradient vertical
+menu.hilite.color:					    #28309c
+menu.hilite.colorTo:					#28309c	
+menu.hilite.textColor:					#ffffff
