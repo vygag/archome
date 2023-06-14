@@ -89,6 +89,8 @@ wget http://archlinux.thaller.ws/iso/2023.06.01/archlinux-2023.06.01-x86_64.iso
 
 sha256sum archlinux-2023.06.01-x86_64.iso
 
+wget https://geo.mirror.pkgbuild.com/iso/latest/arch/pkglist.x86_64.txt
+
 // С помощью dd удалите таблицу разделов
 sudo dd if=/dev/zero of=/dev/sdb bs=1M count=1
 // записать образ на флэшку
@@ -97,12 +99,16 @@ sudo dd if=archlinux-2023.06.01-x86_64.iso of=/dev/sdb
 ------------------------------------------------ПОДГОТОВКА-----------------------------------------------
 
 // Записать в тетрадь
+lsblk
 mount --mkdir /dev/sda3 /root/hdd
+mount -t ntfs3 vfat
 gpm -m /dev/input/mice -t exps2
-f2=nano f3=mc
+f2=nano f3=mc  login: root
 loadkeys ru
-setfont cyr-sun16
+setfont UniCyr_8x16  ter-c16n
 nano /root/hdd/archome/archome.txt
+umount /dev/sda3
+systemctl poweroff
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -120,9 +126,14 @@ alias wifi='iw dev wlan0 link'
 // установить время
 date -s 09:17
 
+// Отключить синхронизацию системных часов
+timedatectl
+systemctl stop systemd-timesyncd.service
+timedatectl
+
 // русификация
 loadkeys ru
-setfont cyr-sun16
+setfont UniCyr_8x16 cyr-sun16
 
 -----------------------------------------------РАЗМЕТКА ДИСКОВ-------------------------------------------
 
@@ -207,13 +218,12 @@ iw dev
 // подключитесь к сети wi-fi iwctl
 iwctl station wlan0 get-networks                        список обнаруженных сетей
 iwctl -P пароль station wlan0 connect точка
-dhclient wlan0
+// dhclient wlan0                                       должно быть автоматом
 iwctl station wlan0 show                                состояние подключения
 iwctl station wlan0 disconnect
 
 iwctl station wlan0 get-networks
 iwctl -P пароль station wlan0 connect 'точка с пробелом'
-dhclient wlan0
 iwctl station wlan0 show
 iwctl station wlan0 disconnect
 
@@ -229,10 +239,11 @@ Ctrl+d
 
 // подключитесь к сети wi-fi wpa_supplicant
 wpa_passphrase точка пароль > точка.conf
+wpa_passphrase "название точки" пароль > точка.conf
 nano точка.conf
 ctrl_interface=/run/wpa_supplicant
 wpa_supplicant -B -i wlan0 -c точка.conf
-dhclient wlan0
+// dhclient wlan0                                       должно быть автоматом
 wpa_cli disconnect
 
 // Проверка точки
