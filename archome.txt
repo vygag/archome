@@ -218,13 +218,9 @@ iw dev
 // подключитесь к сети wi-fi iwctl
 iwctl station wlan0 get-networks                        список обнаруженных сетей
 iwctl -P пароль station wlan0 connect точка
+iwctl -P пароль station wlan0 connect 'точка с пробелом'
 // dhclient wlan0                                       должно быть автоматом
 iwctl station wlan0 show                                состояние подключения
-iwctl station wlan0 disconnect
-
-iwctl station wlan0 get-networks
-iwctl -P пароль station wlan0 connect 'точка с пробелом'
-iwctl station wlan0 show
 iwctl station wlan0 disconnect
 
 iwctl
@@ -262,7 +258,7 @@ lynx https://archlinux.org/mirrorlist/
 lynx https://archlinux.org/mirrors/status/
 Successfully Syncing Mirrors
 
-5 наиболее подходящих зеркал
+6 наиболее подходящих зеркал
 nano /etc/pacman.d/mirrorlist
 
 -----------------------------------------------REFLECTOR---------------------------------------------------------
