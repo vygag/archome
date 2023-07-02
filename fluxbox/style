@@ -1,0 +1,126 @@
+background:                             fullscreen
+background.color:                       #000000
+background.colorTo:
+
+toolbar:						        flat solid vertical
+toolbar.bevelWidth:					    1
+toolbar.borderWidth:					1
+toolbar.borderColor:					#000000
+toolbar.height:						    13 
+toolbar.justify:					    center
+toolbar.color:						    #ffffff
+toolbar.colorTo:
+toolbar.shaped:                         false
+toolbar.clock:						    flat solid vertical
+toolbar.clock.justify:					center
+toolbar.clock.color:					#000000
+toolbar.clock.colorTo:
+toolbar.clock.textColor:				#ffffff
+toolbar.clock.font:                     liberation mono-8
+toolbar.workspace:					    flat solid vertical					
+toolbar.workspace.justify:				center
+toolbar.workspace.color:				#000000			
+toolbar.workspace.colorTo:
+toolbar.workspace.textColor:		    #ffffff
+toolbar.workspace.font:                 liberation mono-8
+toolbar.button:						    flat solid vertical				 
+toolbar.button.color:					#09ebcd				
+toolbar.button.colorTo:
+toolbar.button.picColor:				#1f31f2
+toolbar.button.pressed:					flat solid vertical			
+toolbar.button.pressed.color:			#e60ced			
+toolbar.button.pressed.colorTo:
+toolbar.button.pressed.picColor:        #857280
+toolbar.iconbar.empty:					flat solid vertical
+toolbar.iconbar.empty.color:			#000000
+toolbar.iconbar.empty.colorTo:
+toolbar.iconbar.borderWidth: 			0
+toolbar.iconbar.focused.borderWidth:	1
+toolbar.iconbar.focused.borderColor:	#000000
+toolbar.iconbar.focused:				flat solid vertical
+toolbar.iconbar.focused.color:			#000000
+toolbar.iconbar.focused.colorTo:
+toolbar.iconbar.focused.textColor:		#6298e0
+toolbar.iconbar.focused.justify:		center
+toolbar.iconbar.unfocused.borderWidth:	1
+toolbar.iconbar.unfocused.borderColor:	#ffffff
+toolbar.iconbar.unfocused:				flat solid vertical	
+toolbar.iconbar.unfocused.color:		#000000
+toolbar.iconbar.unfocused.colorTo:
+toolbar.iconbar.unfocused.textColor:	#ffffff
+toolbar.iconbar.unfocused.justify:		center
+toolbar.font:                           liberation mono-8
+
+menu.bevelWidth:					    0
+menu.itemHeight:					    14
+menu.titleHeight:					    14
+menu.roundCorners:						
+menu.borderColor:					    #5c3a32
+menu.borderWidth:					    1
+menu.bullet.position:					Right
+menu.bullet:						    triangle
+menu.title:						        flat solid vertical							
+menu.title.justify:					    center
+menu.title.color:					    #5c3a32						
+menu.title.colorTo:			
+menu.title.textColor:					#000000
+menu.title.font:                        liberation mono-8
+menu.frame:	                            flat							
+menu.frame.justify:					    left
+menu.frame.color:					    #000000
+menu.frame.colorTo:
+menu.frame.textColor:					#ffffff
+menu.frame.disableColor:				
+menu.frame.font:                        liberation mono-10
+menu.hilite:						    flat solid vertical
+menu.hilite.color:					    #28309c
+menu.hilite.colorTo:
+menu.hilite.textColor:					#ffffff
+
+window.bevelWidth:					    1
+window.borderWidth:					    1
+window.borderColor:					    #6298e0
+window.roundCorners:					Top
+window.justify:						    center
+window.title.height:					16
+window.title.focus:					    flat			
+window.title.focus.color:				#000000
+window.title.focus.colorTo:	
+window.title.unfocus:					flat	
+window.title.unfocus.color:				#515152				
+window.title.unfocus.colorTo:
+window.font:                            liberation mono-8		
+window.label.focus:					    flat
+window.label.focus.color:				#000000		
+window.label.focus.colorTo:		
+window.label.focus.textColor:			#ffffff 
+window.label.unfocus:					flat
+window.label.unfocus.color:				#515152		
+window.label.unfocus.colorTo:
+window.label.unfocus.textColor:			#828385
+window.button.focus:					ParentRelative
+window.button.focus.color:      	    #ffffff
+window.button.focus.colorTo:
+window.button.focus.picColor:			#ffffff
+window.button.unfocus:					ParentRelative				
+window.button.unfocus.Color:		    828385
+window.button.unfocus.ColorTo:						
+window.button.unfocus.picColor:			#828385
+window.button.pressed:					Flat			
+window.button.pressed.color:			#4C4C4C
+window.button.pressed.colorTo:	
+window.button.pressed.picColor:			#000000
+window.frame.focusColor:                #f7f302
+window.handle.focus:					flat				
+window.handle.focus.color:				#000000		
+window.handle.focus.colorTo:						
+window.handle.unfocus:					flat				
+window.handle.unfocus.color:			#515152		
+window.handle.unfocus.colorTo:					
+window.handleWidth:					    1
+window.grip.focus:					    flat				
+window.grip.focus.color:				#074cfa						
+window.grip.focus.colorTo:								
+window.grip.unfocus:					flat				
+window.grip.unfocus.color:				#515152				
+window.grip.unfocus.colorTo:								
